@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/* Styles for amsiteworks.com */
+
+/******************************
+Reset CSS
+******************************/
+*, html {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+html {color: #000; background: #FFF;}
+body, div, ul, li, h1, h2, h3, input, p, th, td, figure, figcaption {margin: 0;	padding: 0;}
+table {border-collapse: collapse; border-spacing: 0;}
+img { border: 0;}
+th {	font-style: normal; font-weight: normal;}
+ul, li {	list-style: none;}
+h1, h2, h3 {	font-size: 100%; font-weight: normal;}
+input {font-family: inherit;	font-size: inherit; font-weight: inherit;}
+
+/******************************
+Global Styles
+******************************/
+html {
+	background-color: black;
+	font-size: 18px;
+}
+body,td,th {
+	font-family: didact-gothic, imprima, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: black;
+}
+body {
+	width: 100%;
+	max-width: 1024px;
+	margin: auto;
+	background-color: #EEE;
+}
+h1, h2, h3 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.3em;
+}
+h3 {
+	font-size: 1.2em;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+header {
+	background: #cccd34; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjY2NjZDM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjY2NjZDM0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODIlIiBzdG9wLWNvbG9yPSIjMDIxYjZhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+	background: -moz-linear-gradient(45deg,  #cccd34 0%, #cccd34 50%, #021b6a 82%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#cccd34), color-stop(50%,#cccd34), color-stop(82%,#021b6a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  #cccd34 0%,#cccd34 50%,#021b6a 82%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  #cccd34 0%,#cccd34 50%,#021b6a 82%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  #cccd34 0%,#cccd34 50%,#021b6a 82%); /* IE10+ */
+	background: linear-gradient(45deg,  #cccd34 0%,#cccd34 50%,#021b6a 82%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccd34', endColorstr='#021b6a',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	max-height: 200px;
+	margin: 0;
+}
+@media (max-width: 1003px) {
+	header img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+nav {
+	width: 100%;
+	max-width: 1024px;
+	margin: auto;
+}
+nav, nav ul{
+	display: block;
+	height: 30px;
+	background-color: #021B6A;
+	width: 100%-20px;
+}
+nav ul {
+	margin-left: 20px;
+}
+nav ul li {
+	width: 100%;
+	max-width: 150px;
+	float: left;
+	list-style: none;
+	background-color: inherit;
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.1em;
+}
+nav a:link, nav a:visited {
+	color: #EAE626;
+}
+nav a:hover {
+	background-color: #1322BB;
+}
+main {
+	display: block;
+	width: 100%;
+	max-width: 1024px;
+}
+main a {
+	color: #021B6A;
+}
+h1.mainheading {
+	margin: 10px 20px 0 60px;
+}
+article {
+	width: 100%;
+	margin: 0;
+	padding: 0 30px 30px 40px;
+	overflow: hidden;
+}
+article p {
+	text-indent: 1em;
+}
+article.primary {
+	max-width: 704px;
+	float: left;
+	padding-bottom: 0;
+}
+article.primary p {
+	text-indent: 1em;
+	margin: 20px;
+}
+aside {
+	display: block;
+	float: right;
+	width: 100%;
+	min-width: 180px;
+	max-width: 300px;
+	background-color: #F3F3F3;
+	padding: 20px;
+}
+@media (max-width: 1000px) {
+	aside {
+		float: left;
+		width: 100%;
+		max-width: 900px;
+	}
+	.sbchunk {
+		display: block;
+		float: left;
+		margin: 30px;
+	}
+}
+aside h2 {
+	margin-top: 20px;
+}
+aside ul {
+	margin: 15px 0 0 15px;
+}
+aside ul li {
+	line-height: 2em;
+}
+.social {
+	display: block;
+	text-align:center;
+	margin-top: 20px;
+}
+footer {
+	background-color: black;
+	color: #E7E649;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	font-size: .8em;
+	padding: 20px;
+}
+/******************************
+Page Specific Styles
+******************************/
+.container {
+	max-width: 502px;
+	margin: 25px auto 25px auto;
+}
+li a.active {
+	color: #D43D40;
+}
+h2.projectheading {
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+h2.projectheading {
+	margin-top: 0;
+}
+article.project img {
+	float: left;
+	margin-right: 35px;
+	padding: 4px;
+	border: 2px solid #021B6A;
+}
+@media (max-width: 350px) {
+	article.project img {
+		width: 100%;
+		height: auto;
+	}
+}
+article.project img:hover {
+	background-color: #E7E649;
+}
+article.project {
+	padding: 30px 50px 25px 60px;
+}
+article.project:nth-child(odd) {
+	background-color: #DDD;
+}
+ul.skilltag {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+ul.skilltag li {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #E7E649;
+	color: #021B6A;
+	padding: 5px;
+	margin: 0 10px 5px 0;
+	border: 1px solid #C6C6C6;
+	border-radius: 6px;
+	font-size: .9em;
+}
+a.linkbutton {
+	text-decoration: none;
+	background-color: #E7E649;
+	color: #021B6A;
+	padding: 0 3px;
+	border: 1px solid #021B6A;
+	border-radius: 6px;
+	font-size: .9em;
+}
+#contact h2 {
+	margin: 0 40px 0 20px;
+	text-indent: 2em;
+}
+form {
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+input {
+	margin-top: 20px;
+}
+textarea {
+	font-size: 1em;
+}
+.buttons {
+	display: block;
+	width: inherit;
+	margin: 10px 10px 10px 160px;
+}
+form button {
+	float: left;
+	background-color: #E7E649;
+	color: #021B6A;
+	padding: 0 3px;
+	border: 1px solid #021B6A;
+	border-radius: 6px;
+	font-size: .9em;
+	margin-right: 10px;
+}
+.notice {
+	font-size: .8em;
+	text-align: left;
+}
+.error {
+	color: red;
+}
+.formRow input.error, textarea.error {
+	border: 1px solid red;
+}
+#contactpage aside {
+	padding: 20px;
+	color: #0964C4;
+	max-width: 300px;
+}
+@media (max-width: 1000px) {
+	#contactpage aside {
+		float: left;
+		width: 100%;
+		max-width: 900px;
+	}
+	form {
+		width: 100%;
+	}
+}
+
+#contactpage article.primary {
+	max-width: 704px;
+}
+#about article {
+	max-width: 850px;
+	margin: auto;
+}
+#bio img {
+	margin-left: 60px;
+}

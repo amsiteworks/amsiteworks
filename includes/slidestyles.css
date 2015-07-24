@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@media (max-width: 560px) {
+	.container {
+		width: auto;
+	}
+}
+@media (min-width: 561px, max-width: 761px) {
+	.container {
+		width: 560px;
+		margin: auto;
+	}
+}
+@media (min-width: 762px) {
+	.container {
+		width: 560px;
+		margin: auto;
+	}
+}
+/*******************Slide Styles**********************/
+/*********From slidesjs**************/
+/* Prevent the slideshow from flashing on load */
+#slides {
+  display: none;
+}
+#noslide{
+	display: block;
+}
+
+/* Center the slideshow */
+.container {
+  margin: 0 auto;
+}
+.container img {
+	width: 100%;
+}
+
+/* Show active item in the pagination */
+.slidesjs-pagination .active {
+  color:red;
+}
+.slidesjs-container {
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+.slidesjs-slides img {left: 0;}
+a.slidesjs-navigation {
+	display: block;
+	float: left;
+	right: 0;
+	text-decoration: none;
+	color: black;
+	padding: 0 15px 0 15px;
+}
+a.slidesjs-navigation:visited {color: black;}
+a.slidesjs-navigation:hover  {color: #D32A4A};
+
+ul.slidesjs-pagination {
+	display: block;
+}
+ul.slidesjs-pagination li {
+	display: block;
+	float: left;
+	padding: 0 15px 10px 15px;
+}
+
+ul.slidesjs-pagination li a {
+	text-decoration: none;
+	color: black;
+}
+ul.slidesjs-pagination li a:hover {color: #D32A4A;}
+
+
+
+.slidesjs-container img {
+	border: 1px solid black;
+}
+a.slidesjs-previous.slidesjs-navigation, a.slidesjs-next.slidesjs-navigation {
+		display: none;
+}
+ul.slidesjs-pagination {
+	margin: 15px;
+	text-align: right;
+}
+ul.slidesjs-pagination li {
+	width: 20px;
+	float: left;
+}
